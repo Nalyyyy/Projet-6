@@ -6,6 +6,7 @@
     border-radius: 25px;
     margin-top: 25px;
     box-sizing: border-box;
+    margin-bottom: 30px;
 }
 .img{
     width: 100%;
@@ -15,7 +16,7 @@
 }
 .arrow{
     position: absolute;
-    top: 50%;
+    top: 40%;
     z-index: 1;
     cursor: pointer;
 }
@@ -49,16 +50,98 @@
     display: flex;
     align-items: flex-end;
     color: #FF6060;
+    margin: 0%;
 }
 .proprio{
+    display: flex;
+    align-items: center;
+}
+.proprio_img{
+    height: 64px;
+    width: 64px;
+    left: 1273px;
+    top: 567px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.proprio_name{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #FF6060;
+    
 }
 .place{
+    margin: 0%;
+    color: #FF6060;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 23px;
+    
 }   
 .tags{
+    display: flex;
+    flex-direction: row;
+}
+.tag{
+    background-color: #FF6060;
+    padding: 3px 40px ;
+    border-radius: 10px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: white; 
+    margin-right: 10px;
 }
 .stars{
 }
+
 .collapses_product{
+    justify-content: space-between;
     display: flex;
     flex-direction: row;
+}
+#Equipements , #Description{
+    width: 47%;
+    box-sizing: border-box;
+    margin-top: 24px;
+}
+#content_Equipements , #content_Description{
+    width: 100%;
+    box-sizing: border-box;
+}
+#p_Equipements , #p_Description{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+
+#title_Equipements , #title_Description{
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 13px 0 13px 20px;
+    
+}
+.ul_product{
+    padding: 0%;
+    margin: 0%;
+    list-style-type: none;
 }
