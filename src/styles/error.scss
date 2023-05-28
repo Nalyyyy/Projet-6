@@ -1,14 +1,20 @@
+.errordiv{
+    margin-top: 90px;
+}
 .error{
     font-family: Montserrat;
     font-size: 288px;
     font-weight: 700;
-    line-height: 411px;
     letter-spacing: 0em;
     text-align: center;
     color: #FF6060;
-    margin: 0;
+    margin: 0%;
+    padding: 0%;
+    width: auto;
 }
-
+.mobile{
+    display: none;
+}
 .oups{
     font-family: Montserrat;
     font-size: 36px;
@@ -25,15 +31,54 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 26px;
-    letter-spacing: 0em;
-    text-align: left;
+    text-align: center;
     margin-top: 182px;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 100px;
-    width: 225px;
 }
 
 .retour a{
     color: #FF6060;
+
+}
+
+@media screen and (max-width:700px){
+    .errordiv{
+        margin-top: 163px;
+    }
+    .error{
+        font-size: 200px;
+        line-height: 137px;
+        margin-bottom: 142px;
+        
+    }
+}
+
+@media screen and (max-width:640px){
+    .errordiv{
+        margin-top: 170px;
+    }
+    .error{
+        font-size: 96px;
+        line-height: 137px;
+        
+    }
+    .oups{
+        font-size: 18px;
+        line-height: 26px;
+        
+    }
+    .mobile{
+        display: block;
+
+    }
+    .non_mobile{
+        display: none;
+    }
+    .retour{
+        margin-top: 133px;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 200px;
+        
+    }
 }

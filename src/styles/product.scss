@@ -2,7 +2,7 @@
     position: relative;
     display: block;
     height: 415px;
-    width: 1240px;
+    width: 100%;
     border-radius: 25px;
     margin-top: 25px;
     box-sizing: border-box;
@@ -13,6 +13,7 @@
     height: 100%;
     background-position: center;
     background-size: cover;
+    border-radius: 25px;
 }
 .arrow{
     position: absolute;
@@ -31,12 +32,12 @@
     flex-direction: row;
     justify-content: space-between;
 }
-.left_side{
+.right_side{
     display: flex;
     flex-direction: column;
     justify-content: left;
 }
-.right_side{
+.left_side{
     display: flex;
     flex-direction: column;
     justify-content: right;
@@ -102,6 +103,11 @@
     margin-right: 10px;
 }
 .stars{
+    margin-top: 27px;
+    align-self: flex-end;
+}
+.star{
+    margin-left: 15px;
 }
 
 .collapses_product{
@@ -138,10 +144,101 @@
     letter-spacing: 0em;
     text-align: left;
     padding: 13px 0 13px 20px;
+    font-weight: normal;
     
 }
 .ul_product{
     padding: 0%;
     margin: 0%;
     list-style-type: none;
+}
+
+@media screen and (max-width:640px){
+    .right_side{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 4px;
+    }
+    .infos{
+        flex-direction: column;
+    }
+    .collapses_product{
+        flex-direction: column;
+    }
+    .slider{
+        height: 255px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+    .img{
+        border-radius: 10px;
+    }
+    .arrow{
+        height: 20px;
+        width: 12px;
+        top: 47%;
+    }
+    .title_product{
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .place{
+        margin-top: 3px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .tags{
+        margin-bottom: 16px;
+    }
+    .tag{
+        padding: 3px 30px 2px 30px;
+        border-radius: 5px;
+        font-size: 10px;
+        line-height: 14px;
+    }
+    .star{
+        height: 13px;
+        margin-right: 6px;
+        margin-left: 0px;
+    }
+    .stars{
+        margin: auto;
+        margin-left: 0%;
+    }
+    .proprio_img{
+        width: 32px;
+        height: 32px;
+    }
+    .proprio_name{
+        font-size: 12px;
+        line-height: 17px;
+        width: 80px;
+    }
+    #Equipements , #Description{
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 0%;
+    }
+    #title_Equipements , #title_Description{
+        font-size: 13px;
+        line-height: 19px;   
+        padding: 0%;
+        height: auto;
+        padding:  5px 11px;
+    }
+    .arrow_collapse{
+        margin-right: 0%;
+        height: 9px;
+        width: 16px;
+        
+    }
+    #p_Equipements , #p_Description{
+        font-size: 12px;
+        line-height: 17px;
+    }
+    #content_Equipements , #content_Description{
+        padding: 17px 11px 1px 11px;
+    }
 }

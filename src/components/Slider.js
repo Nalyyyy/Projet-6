@@ -7,9 +7,7 @@ const Slider = ({picture}) => {
 
     const [index, setIndex] =useState(0) ;
 
-   console.log(index);
-   console.log(picture.length);
-
+    
     const previous = () =>{
         const isFirst = index === 0;
         console.log(isFirst);
@@ -32,8 +30,8 @@ const Slider = ({picture}) => {
 
   return (
     <div className='slider'>
-        <img className='arrow_left arrow' src={arrowLeft} onClick={previous}/>
-        <img className='arrow_right arrow' src={arrowRight} onClick={next}/>
+        <img className='arrow_left arrow' src={arrowLeft} onClick={previous} alt="flèche permettant d'afficher l'image précédente"/>
+        <img className='arrow_right arrow' src={arrowRight} onClick={next} alt="flèche permettant d'afficher l'image suivante"/>
         <div className='img' style={backImage} > 
 
         </div>

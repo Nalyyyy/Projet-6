@@ -15,6 +15,9 @@ nav{
     height: 68px;
     width: 210.32154846191406px;
 }
+.responsive{
+    display: none;
+}
 
 .item_nav{
     text-decoration:none;
@@ -28,4 +31,29 @@ nav{
     letter-spacing: 0em;
     text-align: right;
     color: #FF6060;
+}
+
+@media screen and (max-width:640px){
+
+    .responsive{
+        display: block;
+
+    }
+    .responsive_desktop{
+        display: none;
+    }
+    .logo_kasa{
+        height: 47px;
+        width: 145px;
+    }
+    .item_nav {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 17px;
+        margin-left: 13px;
+        width: auto;
+        height: auto;
+
+    }
+
 }

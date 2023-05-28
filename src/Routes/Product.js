@@ -8,21 +8,22 @@ import Collapse from '../components/Collapse'
 export default function product() {
 
   let contentEquipement ='';
+  let num = '0'
 
   const setEquipement = (x)=> {
     contentEquipement =<ul className='ul_product'> {
-        x.map((each) => <li>   {each}  </li>
+        x.map((each, index) => <li key={`${each}-${index}`}>   {each}  </li>
       )}</ul>
   }
 
-  setEquipement(content[1].equipments)
+  setEquipement(content[num].equipments)
 
   return (
     <div className='product'>
-      <Slider picture={content[1].pictures}/>
-      <InfoProduct infos ={content[1]}/>
+      <Slider picture={content[num].pictures}/>
+      <InfoProduct infos ={content[num]}/>
       <div className='collapses_product'>
-        <Collapse title='Description' content={content[1].description}/>
+        <Collapse title='Description' content={content[num].description}/>
         <Collapse title = 'Equipements' content={contentEquipement} />
       </div>
     </div>

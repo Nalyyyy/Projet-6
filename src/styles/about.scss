@@ -1,5 +1,5 @@
 .about_baneer{
-    width: 1240px;
+    width: 100%;
     height: 223px;
     object-fit: cover;
     border-radius: 25px;
@@ -30,6 +30,11 @@
     background: #FF6060;
     color: white;
     margin: 0%;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+    
 }
 .content_on{
     
@@ -55,4 +60,38 @@
 .arrow_collapse{
     margin-right: 17px;
     width: 24px;
+}
+@media screen and (max-width:1200px){
+    .title , .item , .content_on{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width:640px){
+    .about_baneer{
+        border-radius: 10px;
+        margin-bottom: 19px;
+    }
+    .item{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .title{
+        padding: 10px 7px  10px 11px;
+        width: 100%;
+        font-size: 13px;
+        line-height: 19px;
+        height: auto;
+    }
+    .arrow_collapse{
+        margin-right: 7px;
+    }
+    .content_on{
+        padding: 17px 7px 50px 11px;
+        width: 100%;
+        font-size: 12px;
+        line-height: 17px;
+        
+    }
 }

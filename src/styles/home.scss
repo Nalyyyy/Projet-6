@@ -1,6 +1,7 @@
 .baneer{
     height: 223px;
-    width: 1240px;
+    width: 100%;
+    padding-left: 10px;
     margin-top: 69px;
     border-radius: 25px;
     display: flex;
@@ -43,6 +44,7 @@
     justify-content: left;
     padding: 20px;
     box-sizing: border-box;
+    text-decoration: none;
 }
 .h_card{
     color: white;
@@ -51,4 +53,35 @@
     font-weight: 500;
     text-align: left;
     margin: 0%;
+}
+
+
+@media screen and (max-width:640px){
+.baneer{
+    height: 111px;
+    width: 100%;
+    border-radius: 10px;
+    justify-content: flex-start;
+    
+    }
+.p_baneer{
+    font-size: 24px;
+    line-height: 24px;
+    margin-left: 16px;
+    width: 220px;
+}
+
+.card{
+    height: 255px;
+    width: 100%;
+    border-radius: 10px;    
+    margin: 0%;
+}
+.gallery{
+    padding: 0%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 20px;
+}
 }

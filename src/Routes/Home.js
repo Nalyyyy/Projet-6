@@ -6,6 +6,9 @@ import { Link } from 'react-router-dom'
  
  export default function Home() {
     
+  let yo 
+  let test = () => yo = document.querySelector('.about')
+  
 
    return (
      <div>
@@ -14,7 +17,7 @@ import { Link } from 'react-router-dom'
           </div>
           <div className='gallery'>
             {content.map((each, index) => 
-            <Link to='/Product' className='card' key = {`${each}-${index}`} >
+            <Link to='/Product'  num='3' className='card' key = {`${each}-${index}`} >
               <Card x={each.title}/>
             </Link>
             )}
