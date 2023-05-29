@@ -4,11 +4,20 @@ import content from '../assets/content.json'
 import '../styles/product.scss'
 import InfoProduct from '../components/InfoProduct'
 import Collapse from '../components/Collapse'
+import { useParams } from 'react-router-dom'
+import Navbar from './Navbar'
 
-export default function product() {
+export default function Product() {
+
+  const scroll = () => {window.scrollTo({ top:0, left:0 } )};
+  scroll();
+
+  
+  let id = useParams();
+  let num = `${id.id}`;
+
 
   let contentEquipement ='';
-  let num = '0'
 
   const setEquipement = (x)=> {
     contentEquipement =<ul className='ul_product'> {
@@ -18,8 +27,11 @@ export default function product() {
 
   setEquipement(content[num].equipments)
 
+  
+
   return (
     <div className='product'>
+      <Navbar/>
       <Slider picture={content[num].pictures}/>
       <InfoProduct infos ={content[num]}/>
       <div className='collapses_product'>

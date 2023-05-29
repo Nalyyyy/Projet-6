@@ -1,14 +1,12 @@
-.errordiv{
-    margin-top: 90px;
-}
+
 .error{
+    margin: 90px 0px 0px 0px;
     font-family: Montserrat;
     font-size: 288px;
     font-weight: 700;
     letter-spacing: 0em;
     text-align: center;
     color: #FF6060;
-    margin: 0%;
     padding: 0%;
     width: auto;
 }
@@ -42,22 +40,21 @@
 }
 
 @media screen and (max-width:700px){
-    .errordiv{
-        margin-top: 163px;
-    }
+
     .error{
         font-size: 200px;
         line-height: 137px;
         margin-bottom: 142px;
+        margin-top: 163px;
         
     }
 }
 
 @media screen and (max-width:640px){
-    .errordiv{
-        margin-top: 170px;
-    }
+    
     .error{
+        
+        margin-top: 170px;
         font-size: 96px;
         line-height: 137px;
         
