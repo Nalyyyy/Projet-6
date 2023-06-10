@@ -1,7 +1,7 @@
 import React from 'react'
 import Slider from '../components/Slider'
 import content from '../assets/content.json'
-import '../styles/product.scss'
+import '../styles/product.css'
 import InfoProduct from '../components/InfoProduct'
 import Collapse from '../components/Collapse'
 import { useParams } from 'react-router-dom'

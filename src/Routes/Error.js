@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/error.scss'
+import '../styles/error.css'
 import { Link } from 'react-router-dom'
 import Navbar from './Navbar';
 

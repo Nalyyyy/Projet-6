@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from '../assets/about_baneer.svg'
-import '../styles/about.scss'
+import '../styles/about.css'
 import Collapse from '../components/Collapse'
 import collapse_content from '../assets/collapse_content.json'
 import Navbar from './Navbar'

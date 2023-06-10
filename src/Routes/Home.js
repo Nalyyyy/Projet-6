@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/home.scss'
+import '../styles/home.css'
 import Card from '../components/Card'
 import content from '../assets/content.json'
 import { Link } from 'react-router-dom'
