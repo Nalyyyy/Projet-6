@@ -26,12 +26,13 @@ const Slider = ({picture}) => {
         backgroundImage : `url( ${picture[index]})`
     };
 
-   
+
+    const howMany = picture.length == 1 ? 'none' : 'ok' ;
 
   return (
     <div className='slider'>
-        <img className='arrow_left arrow' src={arrowLeft} onClick={previous} alt="flèche permettant d'afficher l'image précédente"/>
-        <img className='arrow_right arrow' src={arrowRight} onClick={next} alt="flèche permettant d'afficher l'image suivante"/>
+        <img className={`arrow_left arrow ${howMany}`} src={arrowLeft} onClick={previous} alt="flèche permettant d'afficher l'image précédente" />
+        <img className={`arrow_right arrow ${howMany}`} src={arrowRight} onClick={next} alt="flèche permettant d'afficher l'image suivante" />
         <div className='img' style={backImage} > 
 
         </div>
